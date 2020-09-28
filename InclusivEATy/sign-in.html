@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <header>
+  <class="header">
+  <nav class="navbar navbar-transparent">
+  <a href="homepage.html" class="navbar-logo">Inclusive Eaty</a>
+  <div class="navbar-right">
+              <a href="about.html">About Us</a>
+              <a href="#">Find Your Place</a>
+              <a href="sign-in.html">Sign In</a>
+              <a href="#">Contact</a>
+          </div>
+      </nav>
+
+      <link href="style.css" rel="stylesheet">
+      <!-- CSS only -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+  <!-- JS, Popper.js, and jQuery -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    </header>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial, Helvetica, sans-serif;}
+form {border: 3px solid #f1f1f1;}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+      overflow: hidden;
+      background-color: #D47ACE;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index:1001;
+    }
+
+.navbar-logo {
+  font-size:25px;
+  word-spacing:0px;
+}
+    .navbar a {
+      float:left;
+      display: block;
+      color: white;
+      text-align:center;
+      padding: 15px 18px;
+      text-decoration:none;
+      font-size: 23px;
+      font-style:normal;
+      font-family:"Rockwell", Monaco, monospace;
+      letter-spacing:0px;
+      word-spacing:5px;
+      font-weight:700;
+    }
+
+    #nav li {
+      display: inline;
+      padding-right: 30px;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+    }
+    #demoFont {
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 29px;
+letter-spacing: 5.2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+}
+
+input[type=text], input[type=password] {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  background-color: pink;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+
+button:hover {
+  opacity: 0.8;
+}
+
+.cancelbtn {
+  width: auto;
+  padding: 10px 18px;
+  background-color: #f44336;
+}
+
+.imgcontainer {
+  text-align: center;
+  margin: 24px 0 12px 0;
+}
+
+img.avatar {
+  width: 40%;
+  border-radius: 50%;
+  padding-top:10vh;
+  padding-bottom:0vh;
+}
+
+.container {
+  padding: 16px;
+}
+
+span.psw {
+  float: right;
+  padding-top: 16px;
+}
+
+.button {
+  background-color:pink;
+}
+
+/* Change styles for span and cancel button on extra small screens */
+@media screen and (max-width: 300px) {
+  span.psw {
+     display: block;
+     float: none;
+  }
+  .cancelbtn {
+     width: 100%;
+  }
+}
+</style>
+</head>
+<body>
+
+<h2>Login Form</h2>
+
+<form action="/action_page.php" method="post">
+  <div class="imgcontainer">
+    <img src="leon-ell-C8Q_zR8PDlA-unsplash.jpg" alt="Avatar" class="avatar">
+  </div>
+
+  <div class="container">
+    <label for="uname"><b>Username</b></label>
+    <input type="text" placeholder="Enter Username" name="uname" required>
+
+    <label for="psw"><b>Password</b></label>
+    <input type="password" placeholder="Enter Password" name="psw" required>
+
+    <button type="submit">Login</button>
+    <label>
+      <input type="checkbox" checked="checked" name="remember"> Remember me
+    </label>
+  </div>
+
+  <div class="container" style="background-color:#f1f1f1">
+    <button type="button" class="cancelbtn">Cancel</button>
+    <span class="psw">Forgot <a href="#">password?</a></span>
+  </div>
+</form>
+
+</body>
+</html>

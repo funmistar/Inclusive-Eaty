@@ -1,1 +1,18 @@
 
+.leftside {
+  height:100vh;
+  width:100vh;
+}
+
+.rightside {
+  height:100vh;
+  width:100vh;
+}
+
+.leftside {
+  background:red;
+}
+
+.rightside {
+  background:blue;
+}
