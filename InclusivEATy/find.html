@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <header>
+<class="header">
+<nav class="navbar navbar-transparent">
+<a href="homepage.html" class="navbar-logo">Inclusive Eaty</a>
+<div class="navbar-right">
+              <a href="about.html">About Us</a>
+              <a href="find.html">Find Your Place</a>
+              <a href="sign-in.html">Sign In</a>
+              <a href="#">Contact</a>
+          </div>
+      </nav>
+
+      <link href="style.css" rel="stylesheet">
+      <!-- CSS only -->
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+
+<!-- JS, Popper.js, and jQuery -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+
+    </header>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+.filterDiv {
+  float: left;
+  background-color: pink;
+  color: #ffffff;
+  width: 150px;
+  line-height: 100px;
+  text-align: center;
+  margin: 10px;
+  display: none;
+}
+
+.myBtnContainer {
+  margin-top:110px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+.navbar {
+      overflow: hidden;
+      background-color: #D47ACE;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index:1001;
+    }
+
+.navbar-logo {
+  font-size:25px;
+  word-spacing:0px;
+}
+    .navbar a {
+      float:left;
+      display: block;
+      color: white;
+      text-align:center;
+      padding: 15px 18px;
+      text-decoration:none;
+      font-size: 23px;
+      font-style:normal;
+      font-family:"Rockwell", Monaco, monospace;
+      letter-spacing:0px;
+      word-spacing:5px;
+      font-weight:700;
+    }
+
+    #nav li {
+      display: inline;
+      padding-right: 30px;
+    }
+
+    .navbar a:hover {
+      color: #ffffff;
+    }
+
+
+
+    #demoFont {
+font-family: "Lucida Console", Monaco, monospace;
+font-size: 29px;
+letter-spacing: 5.2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: 700;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: uppercase;
+}
+
+
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  margin-bottom: 20px;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+</style>
+<body>
+
+  <div style="position:responsive; top:10%; width=80%; height:80%; bottom:20%">
+    <img src="small-jon-tyson-ZA9PHAnVP5g-unsplash.jpg" alt="Be Happy" style="width:100%">
+  </div>
+
+
+
+
+
+<div id="myBtnContainer" style="padding-top:10px; left:10px; margin-left:15px">
+  <button class="btn active" onclick="filterSelection('all')">Find Your Happy Place</button>
+  <button class="btn" onclick="filterSelection('allergies')"> Allergies</button>
+  <button class="btn" onclick="filterSelection('access')"> Accessibility</button>
+  <button class="btn" onclick="filterSelection('religious')"> Religious Restrictions</button>
+  <button class="btn" onclick="filterSelection('medical')"> Medical Requirements</button>
+  <button class="btn" onclick="filterSelection('alcohol')"> Alcohol Preference</button>
+  <button class="btn" onclick="filterSelection('diet')"> Dietary Preference</button>
+</div>
+
+
+<div class="container">
+  <div class="filterDiv allergies">No Tree Nuts</div>
+  <div class="filterDiv allergies">No Peanuts</div>
+  <div class="filterDiv allergies">No Celery</div>
+  <div class="filterDiv allergies">No Mustard</div>
+  <div class="filterDiv allergies">No Gluten</div>
+  <div class="filterDiv allergies">No Eggs</div>
+  <div class="filterDiv allergies">No Milk</div>
+  <div class="filterDiv allergies">No Sesame</div>
+  <div class="filterDiv allergies">No Fish</div>
+  <div class="filterDiv allergies">No Crustaceans</div>
+  <div class="filterDiv allergies">No Molluscs</div>
+  <div class="filterDiv allergies">No Soya</div>
+  <div class="filterDiv allergies">No Sulphites</div>
+  <div class="filterDiv allergies">No Lupin</div>
+
+  <div class="filterDiv access">Sign Language</div>
+  <div class="filterDiv access">Braille Menus </div>
+  <div class="filterDiv access">Wheelchair-Friendly</div>
+  <div class="filterDiv access">Visual Supports</div>
+  <div class="filterDiv access">Quiet Atmosphere</div>
+
+  <div class="filterDiv religious">Bahå'i</div>
+  <div class="filterDiv religious">Hinduism</div>
+  <div class="filterDiv religious">Judaism</div>
+  <div class="filterDiv religious">Islam</div>
+
+  <div class="filterDiv medical">Low-Salt</div>
+  <div class="filterDiv medical">Diabetic</div>
+  <div class="filterDiv religious">Islam</div>
+
+  <div class="filterDiv alcohol">Alcohol-Free</div>
+
+  <div class="filterDiv diet">Vegetarian</div>
+   <div class="filterDiv diet">Vegan</div>
+    <div class="filterDiv diet">Keto</div>
+     <div class="filterDiv diet">Paleo</div>
+      <div class="filterDiv diet">Pescetarian</div>
+       <div class="filterDiv diet">Low Carb</div>
+
+
+
+</div>
+</div>
+
+<script>
+  filterSelection("all")
+
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {
+        element.className += " " + arr2[i];
+      }
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function() {
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+
+</body>
+</html>
